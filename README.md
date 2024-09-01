@@ -6,10 +6,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - To Set Up
   ```bash
+  export VOLTA_FEATURE_PNPM=1
   volta run pnpm i
   ```
   ```bash
+  export VOLTA_FEATURE_PNPM=1
   volta run pnpm dev
   ```
 
-Next: [Learn Next.js: CSS Styling | Next.js](https://nextjs.org/learn/dashboard-app/css-styling)

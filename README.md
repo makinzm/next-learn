@@ -14,3 +14,5 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
   volta run pnpm dev
   ```
 
+Next: [Learn Next.js: Optimizing Fonts and Images | Next.js](https://nextjs.org/learn/dashboard-app/optimizing-fonts-images)
+

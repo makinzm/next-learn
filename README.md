@@ -17,5 +17,6 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 Imporance to optimmize fonts to improve performance -> Google SEO
 - [How Core Web Vitals affect application SEO: Understanding Google page experience ranking and Lighthouse scores – Vercel](https://vercel.com/blog/how-core-web-vitals-affect-seo)
 
-[Learn Next.js: Optimizing Fonts and Images | Next.js](https://nextjs.org/learn/dashboard-app/optimizing-fonts-images#adding-a-primary-font)
+# Next
 
+[Learn Next.js: Creating Layouts and Pages | Next.js](https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages)

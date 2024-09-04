@@ -19,4 +19,4 @@ Imporance to optimmize fonts to improve performance -> Google SEO
 
 # Next
 
-[Learn Next.js: Creating Layouts and Pages | Next.js](https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages)
+[Learn Next.js: Navigating Between Pages | Next.js](https://nextjs.org/learn/dashboard-app/navigating-between-pages)

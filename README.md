@@ -22,3 +22,7 @@ Imporance to optimmize fonts to improve performance -> Google SEO
 
 [Learn Next.js: Setting Up Your Database | Next.js](https://nextjs.org/learn/dashboard-app/setting-up-your-database)
 
+## Next learn
+
+- [Learn Next.js: Partial Prerendering | Next.js](https://nextjs.org/learn/dashboard-app/partial-prerendering)
+

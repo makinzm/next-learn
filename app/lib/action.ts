@@ -27,10 +27,16 @@ export async function createInvoice(formData: FormData) {
   // Test it out:
   console.log(typeof amount);
 
-  await sql`
-    INSERT INTO invoices (customer_id, amount, status, date)
-    VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
-  `;
+  try {
+    await sql`
+      INSERT INTO invoices (customer_id, amount, status, date)
+      VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
+    `;
+  } catch(error) {
+    return {
+      message: 'Database Error failed to Create Invoices',
+    };
+  }
 
   // Revalidate the invoices page to show the new invoice
   revalidatePath('/dashboard/invoices');
@@ -48,19 +54,27 @@ export async function updateInvoice(id: string, formData: FormData) {
   });
  
   const amountInCents = amount * 100;
- 
-  await sql`
-    UPDATE invoices
-    SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
-    WHERE id = ${id}
-  `;
- 
+
+  try {
+    await sql`
+        UPDATE invoices
+        SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
+        WHERE id = ${id}
+      `;
+  } catch (error) {
+    return { message: 'Database Error: Failed to Update Invoice.' };
+  }
+
   revalidatePath('/dashboard/invoices');
   redirect('/dashboard/invoices');
 }
 
 export async function deleteInvoice(id: string) {
-  await sql`DELETE FROM invoices WHERE id = ${id}`;
-  revalidatePath('/dashboard/invoices');
-  // this actions is supposed to be called from a /dashboard/invoices, the same as the page we want redirect, so we don't need to redirect
+  try{
+    await sql`DELETE FROM invoices WHERE id = ${id}`;
+    revalidatePath('/dashboard/invoices');
+    // this actions is supposed to be called from a /dashboard/invoices, the same as the page we want redirect, so we don't need to redirect
+  } catch(error) {
+    return { message: 'Database Error: Failed to Delete Invoice.' };
+  }
 }

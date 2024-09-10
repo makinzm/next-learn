@@ -44,5 +44,4 @@ Imporance to optimmize fonts to improve performance -> Google SEO
 
 ## Next learn
 
-- [Learn Next.js: Partial Prerendering | Next.js](https://nextjs.org/learn/dashboard-app/partial-prerendering)
-
+[Learn Next.js: Adding Authentication | Next.js](https://nextjs.org/learn/dashboard-app/adding-authentication)

@@ -44,4 +44,4 @@ Imporance to optimmize fonts to improve performance -> Google SEO
 
 ## Next learn
 
-[Learn Next.js: Adding Authentication | Next.js](https://nextjs.org/learn/dashboard-app/adding-authentication)
+[Learn Next.js: Next Steps | Next.js](https://nextjs.org/learn/dashboard-app/next-steps)
